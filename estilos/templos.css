@@ -28,7 +28,7 @@ header {
 }
 
 #menu {
-    background: transparent;
+    background-color: transparent;
     border: none;
     color: white;
     font-size: 2rem;
@@ -55,7 +55,7 @@ nav a {
 
 nav a:hover {
     background-color: #52796f;
-    color: #fff;
+    color: white;
 }
 
 main {
