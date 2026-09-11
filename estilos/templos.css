@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f1e8;
+    color: #2f3e46;
+}
+
+header {
+    background-color: #354f52;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.titulo-site {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+#menu {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.8rem;
+}
+
+nav a:hover {
+    background-color: #52796f;
+    color: #fff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: #354f52;
+    margin-bottom: 2rem;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: 600;
+    padding: 0.8rem 0.3rem 0.3rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #354f52;
+    color: white;
+}
