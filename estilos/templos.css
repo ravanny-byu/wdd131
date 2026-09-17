@@ -42,6 +42,11 @@ header {
     background-color: #52796f;
 }
 
+#menu:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
 nav {
     display: none;
     flex-direction: column;
@@ -67,6 +72,11 @@ nav a:focus {
     color: white;
 }
 
+nav a:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -77,6 +87,7 @@ h1 {
     font-family: "Playfair Display", serif;
     text-align: center;
     color: #354f52;
+    margin-top: 0;
     margin-bottom: 2rem;
 }
 
