@@ -4,12 +4,16 @@ const navigation = document.querySelector("nav");
 menuButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
 
-    if (navigation.classList.contains("open")) {
+    const menuOpen = navigation.classList.contains("open");
+
+    if (menuOpen) {
         menuButton.textContent = "✕";
         menuButton.setAttribute("aria-label", "Fechar menu");
+        menuButton.setAttribute("aria-expanded", "true");
     } else {
         menuButton.textContent = "☰";
         menuButton.setAttribute("aria-label", "Abrir menu");
+        menuButton.setAttribute("aria-expanded", "false");
     }
 });
 

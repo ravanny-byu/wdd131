@@ -22,6 +22,10 @@
         gap: 2rem;
     }
 
+    figure img {
+        height: 250px;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
@@ -29,7 +33,16 @@
 
 @media screen and (min-width: 1000px) {
 
+    main {
+        max-width: 1200px;
+    }
+
     .galeria {
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    figure img {
+        height: 250px;
     }
 }
