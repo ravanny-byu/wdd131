@@ -1,0 +1,83 @@
+:root {
+    --bord: 1px solid #777;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header,
+main,
+footer {
+    width: 760px;
+    max-width: 90%;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Links ativos e visitados */
+a:link,
+a:visited {
+    color: navy;
+}
+
+/* Efeito ao passar o mouse */
+a:hover {
+    color: purple;
+}
+
+/* Tabela */
+.datatable {
+    width: 200px;
+    margin-top: 2rem;
+    border: var(--bord);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+/* Linha horizontal sem duplicar bordas */
+.row:not(:last-child) {
+    border-bottom: var(--bord);
+}
+
+.col {
+    padding: 10px;
+}
+
+/* Linha vertical entre as colunas */
+.col:nth-child(2) {
+    border-left: var(--bord);
+}
+
+/* Última linha com fundo cinza mais escuro */
+.row:last-child {
+    background-color: #ccc;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: smaller;
+    text-align: left;
+}
