@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça Rio das Ostras, uma cidade litorânea do estado do Rio de Janeiro.">
+    <meta name="author" content="Ravanny da Silva Trajano Galvão Navarro">
+
+    <title>Rio das Ostras | WDD 131</title>
+
+    <link rel="stylesheet" href="estilos/local.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rio das Ostras</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source
+                    media="(max-width: 699px)"
+                    srcset="imagens/rio-das-ostras-pequena.webp">
+                <source
+                    media="(min-width: 700px)"
+                    srcset="imagens/rio-das-ostras-grande.webp">
+                <img
+                    src="imagens/rio-das-ostras-grande.webp"
+                    alt="Paisagem de Rio das Ostras, Rio de Janeiro"
+                    width="1200"
+                    height="600">
+            </picture>
+        </section>
+
+        <section class="informacoes">
+            <div class="sobre">
+                <h2>Sobre Rio das Ostras</h2>
+
+                <p>
+                    Rio das Ostras é uma cidade localizada no litoral do estado
+                    do Rio de Janeiro, conhecida por suas belas praias,
+                    paisagens naturais e atividades relacionadas ao turismo.
+                </p>
+
+                <p>
+                    A cidade oferece diversas opções de lazer, incluindo praias,
+                    áreas verdes, restaurantes e locais para apreciar o pôr do sol.
+                    É um destino que combina natureza, tranquilidade e vida
+                    litorânea.
+                </p>
+            </div>
+
+            <div class="dados">
+                <h2>Dados</h2>
+
+                <p><strong>País:</strong> Brasil</p>
+                <p><strong>Estado:</strong> Rio de Janeiro</p>
+                <p><strong>Região:</strong> Sudeste</p>
+                <p><strong>Idioma:</strong> Português</p>
+                <p><strong>Moeda:</strong> Real brasileiro</p>
+            </div>
+
+            <div class="clima">
+                <h2>Clima</h2>
+
+                <img
+                    src="imagens/clima.svg"
+                    alt="Ícone representando clima parcialmente nublado"
+                    width="60"
+                    height="60">
+
+                <p><strong>Temperatura:</strong> <span id="temperatura">28</span> °C</p>
+
+                <p><strong>Condição:</strong> Parcialmente nublado</p>
+
+                <p><strong>Vento:</strong> <span id="vento">12</span> km/h</p>
+
+                <p>
+                    <strong>Sensação térmica:</strong>
+                    <span id="sensacao">Calculando...</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="ano"></span>
+            ❖ Ravanny da Silva Trajano Galvão Navarro ❖ Brasil
+        </p>
+
+        <p>
+            Última modificação:
+            <span id="ultima-modificacao"></span>
+        </p>
+    </footer>
+</body>
+</html>
