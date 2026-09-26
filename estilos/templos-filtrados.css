@@ -1,0 +1,239 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f1e8;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #354f52;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+#menu {
+    display: block;
+    margin: 0 auto 1rem;
+    padding: 0.5rem 1rem;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: white;
+    color: #354f52;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+
+    padding: 0.8rem;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #52796f;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+main h2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+
+/* =========================
+   GALERIA
+========================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+/* =========================
+   CARD DO TEMPLO
+========================= */
+
+.temple-card {
+    background-color: white;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.2s ease;
+}
+
+.temple-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+.temple-card img {
+    display: block;
+
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.temple-info {
+    padding: 1rem;
+}
+
+.temple-info h3 {
+    font-family: "Playfair Display", serif;
+    color: #354f52;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.temple-info p {
+    margin-bottom: 0.4rem;
+}
+
+.temple-info strong {
+    color: #354f52;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    background-color: #354f52;
+    color: white;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+
+/* =========================
+   TELAS MAIORES
+========================= */
+
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 0.7rem 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

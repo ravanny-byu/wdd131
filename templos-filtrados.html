@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Álbum do Templo - Templos Filtrados</title>
+
+    <meta
+        name="description"
+        content="Álbum de templos de A Igreja de Jesus Cristo dos Santos dos Últimos Dias."
+    >
+
+    <meta
+        name="author"
+        content="Ravanny da Silva Trajano Galvão Navarro"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+
+    <script src="scripts/dados-templos.js" defer></script>
+    <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Álbum do Templo</h1>
+
+        <button id="menu" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <nav>
+            <a href="#" data-filtro="todos">Página Inicial</a>
+            <a href="#" data-filtro="antigos">Antigo</a>
+            <a href="#" data-filtro="novos">Novo</a>
+            <a href="#" data-filtro="grandes">Grande</a>
+            <a href="#" data-filtro="pequenos">Pequeno</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Templos</h2>
+
+        <section
+            id="temples-container"
+            class="gallery"
+            aria-label="Galeria de templos"
+        ></section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span>
+            ❖ Ravanny da Silva Trajano Galvão Navarro ❖ Brasil
+        </p>
+
+        <p>
+            Última modificação:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+</html>
