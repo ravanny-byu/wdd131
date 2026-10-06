@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Planejamento do site Turismo em Rio das Ostras, Rio de Janeiro.">
+    <meta name="author" content="Projeto Turismo em Rio das Ostras">
+
+    <title>Planejamento do Site - Turismo em Rio das Ostras</title>
+
+    <style>
+        /* ==============================
+           ESQUEMA DE CORES
+           Azul: #0077B6
+           Turquesa: #00B4D8
+           Areia: #F8F1E5
+           Texto: #333333
+           ============================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background-color: #F8F1E5;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0077B6;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #0077B6;
+            border-bottom: 3px solid #00B4D8;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #0077B6;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        .cor {
+            display: inline-block;
+            width: 120px;
+            padding: 15px;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .azul {
+            background-color: #0077B6;
+        }
+
+        .turquesa {
+            background-color: #00B4D8;
+        }
+
+        .areia {
+            background-color: #F8F1E5;
+            color: #333333;
+            border: 1px solid #ccc;
+        }
+
+        .texto {
+            background-color: #333333;
+        }
+
+        .wireframes {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .wireframe {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .wf-box {
+            border: 2px solid #0077B6;
+            margin: 8px 0;
+            padding: 15px;
+            text-align: center;
+            background-color: #F8F1E5;
+        }
+
+        .wf-header {
+            background-color: #0077B6;
+            color: white;
+        }
+
+        .wf-accent {
+            background-color: #00B4D8;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0077B6;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 18px;
+            }
+
+            .wireframes {
+                display: block;
+            }
+
+            .wireframe {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🌊 Rio das Ostras Turismo</div>
+        <p>Planejamento do site turístico de Rio das Ostras - RJ</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>1. Nome do Site</h2>
+
+            <h3>Rio das Ostras Turismo</h3>
+
+            <p>
+                O nome escolhido para o site é <strong>Rio das Ostras Turismo</strong>.
+                Ele foi escolhido por ser simples, direto e relacionado ao objetivo
+                principal do projeto: apresentar informações turísticas sobre a cidade
+                de Rio das Ostras, no estado do Rio de Janeiro.
+            </p>
+
+            <p>
+                O nome facilita a identificação do conteúdo pelo visitante e pode ser
+                utilizado futuramente como nome de domínio, caso esteja disponível.
+            </p>
+
+            <p>
+                <strong>Ideia de logotipo:</strong> uma representação de uma onda do mar
+                acompanhada por uma pequena concha ou uma ostra, utilizando principalmente
+                as cores azul e turquesa.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Finalidade do Site</h2>
+
+            <p>
+                O objetivo do site é funcionar como um guia turístico digital sobre
+                Rio das Ostras. A página apresentará informações que ajudem moradores
+                e turistas a conhecer melhor a cidade e planejar uma visita.
+            </p>
+
+            <p>O site deverá apresentar:</p>
+
+            <ul>
+                <li>Principais praias de Rio das Ostras;</li>
+                <li>Pontos turísticos e lugares para visitar;</li>
+                <li>Atividades de lazer e turismo;</li>
+                <li>Informações sobre os locais apresentados;</li>
+                <li>Imagens para facilitar a visualização dos pontos turísticos;</li>
+                <li>Mapa ou localização dos principais lugares;</li>
+                <li>Dicas para ajudar no planejamento da visita;</li>
+                <li>Formulário para contato e interação com os visitantes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Público-Alvo</h2>
+
+            <p>
+                O público-alvo será formado principalmente por pessoas interessadas
+                em conhecer Rio das Ostras, incluindo turistas, famílias, casais,
+                grupos de amigos e pessoas que estejam planejando uma viagem para
+                a cidade.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Cenários</h2>
+
+            <p>
+                Os cenários abaixo representam algumas perguntas que os visitantes
+                poderão ter ao acessar o site:
+            </p>
+
+            <ul>
+                <li>Quais são as principais praias que posso visitar em Rio das Ostras?</li>
+                <li>Quais pontos turísticos são recomendados para conhecer na cidade?</li>
+                <li>O que posso fazer em Rio das Ostras durante uma visita?</li>
+                <li>Onde ficam os principais pontos turísticos?</li>
+                <li>Quais dicas podem me ajudar a planejar minha viagem?</li>
+                <li>Como posso entrar em contato para enviar uma dúvida ou sugestão?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Esquema de Cores</h2>
+
+            <p>
+                O esquema de cores foi escolhido para transmitir uma sensação de
+                praia, natureza, tranquilidade e turismo. As cores principais
+                remetem ao mar e à areia, características relacionadas à cidade.
+            </p>
+
+            <div class="cor azul">
+                Azul<br>
+                #0077B6
+            </div>
+
+            <div class="cor turquesa">
+                Turquesa<br>
+                #00B4D8
+            </div>
+
+            <div class="cor areia">
+                Areia<br>
+                #F8F1E5
+            </div>
+
+            <div class="cor texto">
+                Texto<br>
+                #333333
+            </div>
+
+            <h3>Aplicação das cores</h3>
+
+            <ul>
+                <li>
+                    <strong>Azul (#0077B6):</strong> cabeçalho, títulos principais,
+                    menu e elementos de destaque.
+                </li>
+                <li>
+                    <strong>Turquesa (#00B4D8):</strong> detalhes, bordas, botões,
+                    links e elementos de destaque secundário.
+                </li>
+                <li>
+                    <strong>Areia (#F8F1E5):</strong> fundo da página e áreas
+                    relacionadas ao conteúdo.
+                </li>
+                <li>
+                    <strong>Texto (#333333):</strong> textos e parágrafos para
+                    facilitar a leitura.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Tipografia</h2>
+
+            <p>
+                A tipografia foi escolhida pensando na facilidade de leitura,
+                principalmente em dispositivos móveis.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Arial:</strong> será utilizada no corpo do texto,
+                    parágrafos, listas e informações gerais.
+                </li>
+
+                <li>
+                    <strong>Arial Bold:</strong> será utilizada em títulos,
+                    subtítulos e informações que precisem de maior destaque.
+                </li>
+            </ul>
+
+            <p>
+                A fonte Arial foi escolhida por ser uma fonte simples, legível
+                e amplamente disponível em diferentes dispositivos.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Wireframe da Página Inicial</h2>
+
+            <p>
+                O wireframe representa a estrutura planejada para a página inicial.
+                Ele apresenta apenas a organização dos elementos, sem a necessidade
+                de utilizar o conteúdo definitivo.
+            </p>
+
+            <div class="wireframes">
+
+                <div class="wireframe">
+                    <h3>Visualização Mobile</h3>
+
+                    <div class="wf-box wf-header">
+                        LOGO<br>
+                        MENU ☰
+                    </div>
+
+                    <div class="wf-box">
+                        IMAGEM PRINCIPAL<br>
+                        (Banner)
+                    </div>
+
+                    <div class="wf-box">
+                        TÍTULO<br>
+                        Bem-vindo a Rio das Ostras
+                    </div>
+
+                    <div class="wf-box">
+                        DESTAQUES<br>
+                        Praia 1
+                    </div>
+
+                    <div class="wf-box">
+                        DESTAQUES<br>
+                        Praia 2
+                    </div>
+
+                    <div class="wf-box">
+                        DESTAQUES<br>
+                        Ponto turístico
+                    </div>
+
+                    <div class="wf-box wf-accent">
+                        BOTÃO<br>
+                        Ver pontos turísticos
+                    </div>
+
+                    <div class="wf-box">
+                        MAPA
+                    </div>
+
+                    <div class="wf-box">
+                        FORMULÁRIO DE CONTATO
+                    </div>
+
+                    <div class="wf-box wf-header">
+                        RODAPÉ
+                    </div>
+                </div>
+
+                <div class="wireframe">
+                    <h3>Visualização Desktop</h3>
+
+                    <div class="wf-box wf-header">
+                        LOGO | INÍCIO | PRAIAS | PONTOS TURÍSTICOS |
+                        ATIVIDADES | DICAS | CONTATO
+                    </div>
+
+                    <div class="wf-box">
+                        IMAGEM PRINCIPAL / BANNER
+                    </div>
+
+                    <div class="wf-box">
+                        TÍTULO E APRESENTAÇÃO DO SITE
+                    </div>
+
+                    <div style="display: flex; gap: 8px;">
+                        <div class="wf-box" style="flex: 1;">
+                            PRAIA 1
+                        </div>
+
+                        <div class="wf-box" style="flex: 1;">
+                            PRAIA 2
+                        </div>
+
+                        <div class="wf-box" style="flex: 1;">
+                            PONTO TURÍSTICO
+                        </div>
+                    </div>
+
+                    <div class="wf-box wf-accent">
+                        BOTÃO: CONHEÇA RIO DAS OSTRAS
+                    </div>
+
+                    <div style="display: flex; gap: 8px;">
+                        <div class="wf-box" style="flex: 1;">
+                            MAPA / LOCALIZAÇÃO
+                        </div>
+
+                        <div class="wf-box" style="flex: 1;">
+                            DICAS PARA O VISITANTE
+                        </div>
+                    </div>
+
+                    <div class="wf-box">
+                        FORMULÁRIO DE CONTATO
+                    </div>
+
+                    <div class="wf-box wf-header">
+                        RODAPÉ
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>8. Estrutura e Recursos do Site</h2>
+
+            <p>
+                O projeto será desenvolvido utilizando tecnologias básicas de
+                desenvolvimento web.
+            </p>
+
+            <ul>
+                <li><strong>HTML:</strong> estruturação das páginas e conteúdo;</li>
+                <li><strong>CSS:</strong> cores, tipografia, layout e responsividade;</li>
+                <li><strong>JavaScript:</strong> interações e funcionalidades dinâmicas;</li>
+                <li><strong>Imagens:</strong> apresentação dos pontos turísticos;</li>
+                <li><strong>Mapa:</strong> localização de praias e pontos turísticos;</li>
+                <li><strong>Formulário:</strong> interação com os visitantes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>9. Responsividade</h2>
+
+            <p>
+                O site será desenvolvido para funcionar em diferentes tamanhos
+                de tela. No celular, os conteúdos serão organizados principalmente
+                em uma única coluna. Em telas maiores, como notebooks e computadores,
+                os conteúdos poderão ser distribuídos em colunas para aproveitar
+                melhor o espaço disponível.
+            </p>
+        </section>
+
+        <section>
+            <h2>10. Testes e Autoavaliação</h2>
+
+            <p>
+                Ao finalizar o desenvolvimento, o site será testado para verificar
+                se atende aos requisitos do projeto.
+            </p>
+
+            <ul>
+                <li>Validar o código HTML;</li>
+                <li>Verificar o código CSS;</li>
+                <li>Testar a acessibilidade;</li>
+                <li>Verificar o contraste entre texto e fundo;</li>
+                <li>Testar a visualização em celulares e computadores;</li>
+                <li>Verificar a navegação e os links;</li>
+                <li>Testar o formulário;</li>
+                <li>Verificar práticas básicas de SEO;</li>
+                <li>Verificar o desempenho e o carregamento das páginas;</li>
+                <li>Corrigir erros encontrados durante os testes.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Planejamento do Site — Rio das Ostras Turismo</p>
+        <p>Projeto acadêmico</p>
+    </footer>
+
+</body>
+</html>
