@@ -1,0 +1,200 @@
+<!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Formulário para avaliação de produtos">
+
+<title>Formulário de Avaliação de Produto</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/formulario.js" defer></script>
+
+</head> <body>
+<header>
+    <h1>Avaliação de Produto</h1>
+    <p>Compartilhe sua experiência com nosso produto.</p>
+</header>
+
+<main>
+    <form method="get" action="avaliacao.html">
+
+        <!-- Nome do Produto -->
+        <div class="form-group">
+            <label for="product">Nome do Produto</label>
+
+            <select id="product" name="product" required>
+                <option value="" disabled selected>
+                    Selecione um Produto...
+                </option>
+            </select>
+        </div>
+
+        <!-- Classificação Geral -->
+        <fieldset class="form-group">
+            <legend>Classificação Geral</legend>
+
+            <div class="rating">
+
+                <div>
+                    <input
+                        type="radio"
+                        id="rating1"
+                        name="rating"
+                        value="1"
+                        required
+                    >
+                    <label for="rating1">☆</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="rating2"
+                        name="rating"
+                        value="2"
+                    >
+                    <label for="rating2">☆</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="rating3"
+                        name="rating"
+                        value="3"
+                    >
+                    <label for="rating3">☆</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="rating4"
+                        name="rating"
+                        value="4"
+                    >
+                    <label for="rating4">☆</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="rating5"
+                        name="rating"
+                        value="5"
+                    >
+                    <label for="rating5">☆</label>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <!-- Data de Instalação -->
+        <div class="form-group">
+            <label for="installDate">Data de Instalação</label>
+
+            <input
+                type="date"
+                id="installDate"
+                name="installDate"
+                required
+            >
+        </div>
+
+        <!-- Recursos Úteis -->
+        <fieldset class="form-group">
+            <legend>Recursos Úteis</legend>
+
+            <div class="checkbox-group">
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="durability"
+                        name="features"
+                        value="Durabilidade"
+                    >
+                    <label for="durability">
+                        Durabilidade
+                    </label>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="performance"
+                        name="features"
+                        value="Desempenho"
+                    >
+                    <label for="performance">
+                        Desempenho
+                    </label>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="design"
+                        name="features"
+                        value="Design"
+                    >
+                    <label for="design">
+                        Design
+                    </label>
+                </div>
+
+                <div>
+                    <input
+                        type="checkbox"
+                        id="ease"
+                        name="features"
+                        value="Facilidade de Uso"
+                    >
+                    <label for="ease">
+                        Facilidade de Uso
+                    </label>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <!-- Avaliação Escrita -->
+        <div class="form-group">
+            <label for="review">Avaliação Escrita</label>
+
+            <textarea
+                id="review"
+                name="review"
+                rows="6"
+                placeholder="Escreva sua avaliação aqui..."
+            ></textarea>
+        </div>
+
+        <!-- Nome de Usuário -->
+        <div class="form-group">
+            <label for="username">Nome de Usuário</label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                autocomplete="name"
+                placeholder="Digite seu nome"
+            >
+        </div>
+
+        <!-- Botão de Envio -->
+        <input
+            type="submit"
+            value="Enviar Avaliação"
+        >
+
+    </form>
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="currentyear"></span> | Avaliação de Produto
+    </p>
+
+    <p id="lastModified"></p>
+</footer>
+
+</body> </html>
