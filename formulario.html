@@ -1,10 +1,13 @@
 <!DOCTYPE html> <html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Formulário para avaliação de produtos">
+<meta name="description" content="Formulário completo para avaliar produtos, compartilhar experiências e informar a satisfação do usuário.">
+
+<meta name="author" content="Ravanny">
 
 <title>Formulário de Avaliação de Produto</title>
 
-<link rel="stylesheet" href="css/style.css">
-<script src="js/formulario.js" defer></script>
+<link rel="stylesheet" href="estilos/style.css">
+
+<script src="scripts/formulario.js" defer></script>
 
 </head> <body>
 <header>
@@ -13,9 +16,9 @@
 </header>
 
 <main>
+
     <form method="get" action="avaliacao.html">
 
-        <!-- Nome do Produto -->
         <div class="form-group">
             <label for="product">Nome do Produto</label>
 
@@ -26,8 +29,9 @@
             </select>
         </div>
 
-        <!-- Classificação Geral -->
+
         <fieldset class="form-group">
+
             <legend>Classificação Geral</legend>
 
             <div class="rating">
@@ -49,6 +53,7 @@
                         id="rating2"
                         name="rating"
                         value="2"
+                        required
                     >
                     <label for="rating2">☆</label>
                 </div>
@@ -59,6 +64,7 @@
                         id="rating3"
                         name="rating"
                         value="3"
+                        required
                     >
                     <label for="rating3">☆</label>
                 </div>
@@ -69,6 +75,7 @@
                         id="rating4"
                         name="rating"
                         value="4"
+                        required
                     >
                     <label for="rating4">☆</label>
                 </div>
@@ -79,16 +86,21 @@
                         id="rating5"
                         name="rating"
                         value="5"
+                        required
                     >
                     <label for="rating5">☆</label>
                 </div>
 
             </div>
+
         </fieldset>
 
-        <!-- Data de Instalação -->
+
         <div class="form-group">
-            <label for="installDate">Data de Instalação</label>
+
+            <label for="installDate">
+                Data de Instalação
+            </label>
 
             <input
                 type="date"
@@ -96,10 +108,12 @@
                 name="installDate"
                 required
             >
+
         </div>
 
-        <!-- Recursos Úteis -->
+
         <fieldset class="form-group">
+
             <legend>Recursos Úteis</legend>
 
             <div class="checkbox-group">
@@ -111,10 +125,12 @@
                         name="features"
                         value="Durabilidade"
                     >
+
                     <label for="durability">
                         Durabilidade
                     </label>
                 </div>
+
 
                 <div>
                     <input
@@ -123,10 +139,12 @@
                         name="features"
                         value="Desempenho"
                     >
+
                     <label for="performance">
                         Desempenho
                     </label>
                 </div>
+
 
                 <div>
                     <input
@@ -135,10 +153,12 @@
                         name="features"
                         value="Design"
                     >
+
                     <label for="design">
                         Design
                     </label>
                 </div>
+
 
                 <div>
                     <input
@@ -147,17 +167,22 @@
                         name="features"
                         value="Facilidade de Uso"
                     >
+
                     <label for="ease">
                         Facilidade de Uso
                     </label>
                 </div>
 
             </div>
+
         </fieldset>
 
-        <!-- Avaliação Escrita -->
+
         <div class="form-group">
-            <label for="review">Avaliação Escrita</label>
+
+            <label for="review">
+                Avaliação Escrita
+            </label>
 
             <textarea
                 id="review"
@@ -165,36 +190,45 @@
                 rows="6"
                 placeholder="Escreva sua avaliação aqui..."
             ></textarea>
+
         </div>
 
-        <!-- Nome de Usuário -->
+
         <div class="form-group">
-            <label for="username">Nome de Usuário</label>
+
+            <label for="username">
+                Nome de Usuário
+            </label>
 
             <input
                 type="text"
                 id="username"
                 name="username"
-                autocomplete="name"
                 placeholder="Digite seu nome"
+                autocomplete="name"
             >
+
         </div>
 
-        <!-- Botão de Envio -->
+
         <input
             type="submit"
             value="Enviar Avaliação"
         >
 
     </form>
+
 </main>
 
+
 <footer>
+
     <p>
         &copy; <span id="currentyear"></span> | Avaliação de Produto
     </p>
 
     <p id="lastModified"></p>
+
 </footer>
 
 </body> </html>
